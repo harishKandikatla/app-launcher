@@ -65,6 +65,7 @@ class DashboardCard extends HTMLElement {
             this.getAppsList(e.target.value);
         }
 
+        //NOTE: can add debounce for performance improvement
         source.addEventListener('input', inputHandler);
 
         const addBtn = this.shadowRoot.getElementById('add-button');
